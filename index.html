@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEP LBC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <h2>EEEP LBC</h2>
+            </nav>
+        </div>
+        <div class="header-title">
+            <img src="images/logo-ep-removebg-preview.png" alt="header-logo" class="header-logo">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:3000/login.html?vscode-livepreview=true" target="_blank">login</a></li>
+                    <li><a href="#cursos">cursos</a></li>
+                    <li><a href="#infos">sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section id="hero" class="hero">
+            <img src="images/Gemini_Generated_Image_7e3km97e3km97e3k.png" alt="banner-ep" class="banner">
+            <div class="hero-content">
+                <a href="http://127.0.0.1:3000/login.html?vscode-livepreview=true" target="_blank" class="btn">Acessar Portal do Aluno</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div>
+                <h1>Sobre a escola</h1>
+                <p>A EEEP Lucia Baltazar Costa oferece cursos técnicos de alta qualidade, preparando estudantes para o mercado de trabalho com formação integral. Além disso, a instituição promove o desenvolvimento de habilidades socioemocionais, incentivando a responsabilidade, o trabalho em equipe e o pensamento crítico. Com uma equipe de professores qualificados e uma infraestrutura adequada, a escola proporciona um ambiente de aprendizagem dinâmico e acolhedor, contribuindo para a formação de cidadãos conscientes e preparados para os desafios do futuro.</p>
+            </div>
+        </section>
+
+        <section id="cursos" class="cursos">
+            <div>
+                <h1>Cursos oferecidos</h1>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <h3>Desenvolvimento de Sistemas</h3>
+                        <p>Desenvolvimento de software, redes e manutenção de computadores.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>Administração</h3>
+                        <p>Gestão empresarial, contabilidade e empreendedorismo.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>Massoterapia</h3>
+                        <p>Tratamentos de massagem, fisioterapia e cuidados com o corpo.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>Edificaçoes</h3>
+                        <p>Construção civil, arquitetura e engenharia.</p>
+                    </div>
+                    <div class="course-card">
+                    </div>
+                    <div class="course-card">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="noticias">
+            <div class="news">
+                <h2>Notícias e Avisos</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <h3>Inscrições Abertas</h3>
+                        <p>As inscrições para o próximo semestre estão abertas até 17 de Junho.</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <div class="news-card">
+                        <h3>Evento Cultural</h3>
+                        <p>Participe da semana cultural com apresentações e gincanas.</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                    <div class="news-card">
+                        <h3>Code Talks II</h3>
+                        <p>Participe do evento de programação da Lúcia Baltazar.</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-content">
+            <form class="form-contato">
+            <p>Nos dê sugestões</p>
+            <textarea rows="3" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+            </form>
+            <div id="infos" class="infos">
+                <h2>Sobre nós</h2>
+                <a href="https://www.seduc.ce.gov.br/" target="_blank" class="sdc-btn">Portal SEDUC</a>
+            </div>
+            <div class="rights">
+                <p>&copy; 2026 EEEP LBC. Todos os direitos reservados.</p>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 50) {
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
