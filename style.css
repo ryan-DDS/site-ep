@@ -41,6 +41,10 @@ header > div:last-child ul {
     justify-content: flex-end;
 }
 
+.logo-ceara {
+    width: 20%;
+}
+
 .header-logo {
     width: 30px;
     height: auto;
@@ -145,6 +149,10 @@ ul {
     color: #254033;
 }
 
+.cursos h1 {
+    color: var(--dark-green);
+}
+
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,6 +168,11 @@ ul {
     margin-bottom: 20px;
     color: #F2F2F2;
     transition: 0.3s ease;
+    align-content: center;
+}
+
+.course-card img {
+    width: 17%;
 }
 
 .course-card:hover {
@@ -178,6 +191,10 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 12px;
+    color: var(--dark-green);
+}
+
+.news h1 {
     color: var(--dark-green);
 }
 
@@ -218,6 +235,20 @@ footer {
     text-align: center;
 }
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links .social-actions {
+    display: inline-flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .infos h2 {
     color: var(--orange);
     text-align: center;
@@ -225,11 +256,13 @@ footer {
 }
 
 .infos a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #F2F2F2;
     background-color: #345a46;
-    padding: 8px;
+    padding: 10px 16px;
     border-radius: 8px;
     transition: 0.3s ease;
 }
@@ -237,6 +270,10 @@ footer {
 .infos a:hover {
     background-color: #355832;
     transform: translateY(-2px);
+}
+
+.social-btn i {
+    font-size: 18px;
 }
 
 .form-contato{

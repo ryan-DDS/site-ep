@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEEP LBC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <header>
         <div>
             <nav>
-                <h2>EEEP LBC</h2>
+                <img src="images/site-ceara-rgb.png" alt="logo-ceara" class="logo-ceara">
             </nav>
         </div>
         <div class="header-title">
@@ -19,7 +20,7 @@
         <div>
             <nav>
                 <ul>
-                    <li><a href="http://127.0.0.1:3000/login.html?vscode-livepreview=true" target="_blank">login</a></li>
+                    <li><a href="https://auth.seduc.ce.gov.br/realms/aluno/protocol/openid-connect/auth?client_id=aluno-web&redirect_uri=https%3A%2F%2Faluno.seduc.ce.gov.br%2Fauth%2Faluno%2Fauthorize&response_type=code&scope=openid&nonce=bbdb6ccf9f6d4d5293ef56befe5e5da6e7PaQQfpl&state=3e195f0fd7641463276f0ec9dc7c87f6ffDKZZJEa&code_challenge=L3nUo4Sbv_KOJub8R4QOP0rL8gQjhbGYlV83jRmGhNo&code_challenge_method=S256" target="_blank">login</a></li>
                     <li><a href="#cursos">cursos</a></li>
                     <li><a href="#infos">sobre</a></li>
                 </ul>
@@ -33,7 +34,7 @@
         <section id="hero" class="hero">
             <img src="images/Gemini_Generated_Image_7e3km97e3km97e3k.png" alt="banner-ep" class="banner">
             <div class="hero-content">
-                <a href="http://127.0.0.1:3000/login.html?vscode-livepreview=true" target="_blank" class="btn">Acessar Portal do Aluno</a>
+                <a href="https://auth.seduc.ce.gov.br/realms/aluno/protocol/openid-connect/auth?client_id=aluno-web&redirect_uri=https%3A%2F%2Faluno.seduc.ce.gov.br%2Fauth%2Faluno%2Fauthorize&response_type=code&scope=openid&nonce=bbdb6ccf9f6d4d5293ef56befe5e5da6e7PaQQfpl&state=3e195f0fd7641463276f0ec9dc7c87f6ffDKZZJEa&code_challenge=L3nUo4Sbv_KOJub8R4QOP0rL8gQjhbGYlV83jRmGhNo&code_challenge_method=S256" target="_blank" class="btn">Acessar Portal do Aluno</a>
             </div>
         </section>
 
@@ -49,24 +50,30 @@
                 <h1>Cursos oferecidos</h1>
                 <div class="courses-grid">
                     <div class="course-card">
+                        <img src="images/DDSLOGO.png" alt="dds-logo">
                         <h3>Desenvolvimento de Sistemas</h3>
                         <p>Desenvolvimento de software, redes e manutenção de computadores.</p>
                     </div>
                     <div class="course-card">
+                        <img src="images/ADMLOGO.png" alt="masso-logo">
                         <h3>Administração</h3>
                         <p>Gestão empresarial, contabilidade e empreendedorismo.</p>
                     </div>
                     <div class="course-card">
+                        <img src="images/MASSOLOGO.png" alt="masso-logo">
                         <h3>Massoterapia</h3>
                         <p>Tratamentos de massagem, fisioterapia e cuidados com o corpo.</p>
                     </div>
                     <div class="course-card">
+                        <img src="images/EDFLOGO.png" alt="edf-logo">
                         <h3>Edificaçoes</h3>
                         <p>Construção civil, arquitetura e engenharia.</p>
                     </div>
                     <div class="course-card">
+                        <p>Mais cursos futuramente</p>
                     </div>
                     <div class="course-card">
+                        <p>Mais cursos futuramente</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +81,7 @@
 
         <section id="noticias" class="noticias">
             <div class="news">
-                <h2>Notícias e Avisos</h2>
+                <h1>Notícias e Avisos</h1>
                 <div class="news-grid">
                     <div class="news-card">
                         <h3>Inscrições Abertas</h3>
@@ -102,9 +109,17 @@
             <textarea rows="3" placeholder="Mensagem"></textarea>
             <button type="submit">Enviar</button>
             </form>
-            <div id="infos" class="infos">
+            <div id="infos" class="infos footer-links">
                 <h2>Sobre nós</h2>
-                <a href="https://www.seduc.ce.gov.br/" target="_blank" class="sdc-btn">Portal SEDUC</a>
+                <div class="social-actions">
+                    <a href="https://www.instagram.com" target="_blank" class="sdc-btn social-btn" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.seduc.ce.gov.br/" target="_blank" class="sdc-btn">Portal SEDUC</a>
+                    <a href="https://www.facebook.com" target="_blank" class="sdc-btn social-btn" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
             </div>
             <div class="rights">
                 <p>&copy; 2026 EEEP LBC. Todos os direitos reservados.</p>
